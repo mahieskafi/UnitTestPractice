@@ -60,5 +60,12 @@ dependencies {
     def mockito_version = "4.5.0"
     testImplementation "org.mockito:mockito-core:$mockito_version"
 
+    //Room
+    def room_version = "2.4.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+
     androidTestImplementation 'junit:junit:4.13.2'
 }
